@@ -4,7 +4,10 @@
 Backend dependencies
 cd backend 
 npm install 
-node index.js
+npx prisma init
+npx prisma migrate dev --name init
+npx prisma generate
+npm run dev
 
 Swagger URL
 http://localhost:5000/student-api/#/
